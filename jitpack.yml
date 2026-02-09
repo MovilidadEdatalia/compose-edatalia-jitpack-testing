@@ -1,3 +1,8 @@
 install:
-  - FILE="-Dfile=compose-edatalia-jitpack-testing.aar"
-  - mvn install:install-file $FILE -DgroupId=com.edatalia.signplysdk -DartifactId=signplysdk -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
+  - mvn -q install:install-file \
+      -Dfile=compose-edatalia-jitpack-testing.aar \
+      -DgroupId=com.edatalia.testing \
+      -DartifactId=compose-edatalia-jitpack-testing \
+      -Dversion=1.0.0 \
+      -Dpackaging=aar \
+      -DgeneratePom=true
