@@ -1,2 +1,3 @@
-install:
-  - mvn -q install:install-file -Dfile=compose-edatalia-jitpack-testing.aar -DgroupId=com.edatalia.testing -DartifactId=compose-edatalia-jitpack-testing -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
+  install: 
+  - FILE="-Dfile=compose-edatalia-jitpack-testing.aar" 
+  - mvn install:install-file $FILE -DgroupId=ccom.edatalia.testing -DartifactId=compose-edatalia-jitpack-testing -Dversion=1.0.0 -Dpackaging=aar -DgeneratePom=true
